@@ -29,8 +29,9 @@ def setHashingFunction(string):
 
 def printHelp():
 	print("=======================================")
-	print("This tool is used for brute force password cracker of hashed passwords.")
+	print("This tool is used for brute force password cracking of hashed passwords.")
 	print("Usage: ./passwordcracker.py hashed_password target_length")
+	print("Flags:\n-s salt\n-h hashingFunction(md5, sha256, sha512)\n-e starting_string\n-R (Use only alphanumeric characters)\n-O (display output)")
 
 def matchFound(string, hashing_function):
 	print()
