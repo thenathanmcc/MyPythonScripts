@@ -44,12 +44,12 @@ try:
 		line = file.readline();
 
 	new_row_count = cursor.rowcount
-	print("Post Insertion Row Count: ", new_row_count)
+	print("Affected Row Count: ", new_row_count)
 
 except (Exception, Error) as error:
 	print("Error connecting to PostgreSQL:\n", error)
 finally:
 	if (connection):
-		#cursor.close()
+		cursor.close()
 		connection.close()
 		print("PostgreSQL connection is now closed")
