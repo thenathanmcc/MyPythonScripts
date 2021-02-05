@@ -29,7 +29,7 @@ class HeraldHTMLParser(HTMLParser):
 def printUsageInfo():
     print()
     print("========== NZ Herald Premium Paywall Bypasser ==========")
-    print("Tool for bypass NZ Herald's \"premium\" paywall")
+    print("Tool for bypassing NZ Herald's \"premium\" paywall")
     print("Usage: ./herald_premium_parser.py nz_herald_url")
 
 
